@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        #wrap{
+            position: relative;
+            margin:20px;
+            width:658px;
+            height:411px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!--<div>
+            <img  class="show" src="images/1.jpg" alt="">
+            <img  class="" src="images/2.jpg" alt="">
+        </div>
+        -->
+        <div  class="pho show">
+            <img src="images/1.jpg" alt="">
+        </div>
+        <div  class="pho">
+            <img src="images/2.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        /*let aWrap = document.getElementById("wrap")
+        let aImg = document.getElementsByTagName("img")
+        let index = true;
+        console.log(aWrap)
+        console.log(aImg)
+        aWrap.onclick = function(){
+            if (index) {
+
+            aImg[1].className = "show"
+            aImg[0].className = ""
+            index=!index
+            console.log(aImg[1].className)
+            }
+            else{
+                aImg[0].className = "show"
+                aImg[1].className = ""
+                index=!index
+            }
+        }*/
+        let wrap = document.getElementById("wrap")
+        let aPho = document.getElementsByClassName("pho")
+        let index = true;
+        console.log(aPho)
+        wrap.onclick = function(){
+            if(index){
+            aPho[0].className = "pho"
+            aPho[1].className = "pho show"
+        }
+        else{
+            aPho[1].className = "pho"
+            aPho[0].className = "pho show"
+        }
+        index = !index;
+        }
+    </script>
+</body>
+</html>

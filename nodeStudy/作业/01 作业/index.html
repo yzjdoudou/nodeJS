@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <style>
+        #wrap{
+            float: left;
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:#fff;
+            border:5px solid #ccc;
+            line-height: 200px;
+            text-align: center;
+            color: #aaa;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    </div>
+        <ul>
+            <li class="box">粉色</li>
+            <li class="box">红色</li>
+            <li class="box">绿色</li>
+        </ul>
+    <script>
+        let abox = document.getElementsByClassName("box")
+        let awrap = document.getElementById("wrap")
+        abox[0].onclick = function(){
+            awrap.style.backgroundColor = "pink"
+            awrap.innerHTML="少女粉"
+        }
+        abox[1].onclick = function(){
+            awrap.style.backgroundColor = "red"
+            awrap.innerHTML="心动红" 
+        }
+         abox[2].onclick = function(){
+            awrap.style.backgroundColor = "green"
+            awrap.innerHTML="原谅绿"
+        }
+        awrap.onclick = function(){
+            awrap.style.backgroundColor = "yellow"
+            awrap.innerHTML="别碰我"
+        }
+    </script>
+</body>
+</html>

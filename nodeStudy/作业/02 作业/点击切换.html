@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/qiehuan.css">
+    <style>
+        #wrap{
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div class="pic">
+        <img src="images/1.jpg" class="show">
+        <img src="images/2.jpg" class="">
+    </div>
+    <script>
+        let oPic = document.getElementsByClassName("pic")[0]
+        let aImg = document.getElementsByTagName("img")
+        let index = true;
+        oPic.onclick = function(){
+            if(index){
+                aImg[0].className = ""
+                aImg[1].className = "show"
+            }
+            else{
+                aImg[1].className = ""
+                aImg[0].className = "show"
+            }
+            index = !index;
+        }
+    </script>
+</body>
+</html>

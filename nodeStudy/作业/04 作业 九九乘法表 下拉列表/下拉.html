@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/xialaliebiao.css">
+    <style>
+        #wrap{
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <p class="tit">豆豆</p>
+                <p>豆豆是一个坏孩子</p>
+                <p>豆豆是一个坏孩子</p>
+            </li>
+            <li>
+                <p class="tit">宝宝</p>
+                <p>豆豆是一个坏孩子</p>
+                <p>豆豆是一个坏孩子</p>
+            </li>
+            <li>
+                <p class="tit">晶晶</p>
+                <p>豆豆是一个坏孩子</p>
+                <p>豆豆是一个坏孩子</p>
+            </li>
+        </ul>
+    </div>
+    <script>
+       /* let a = document.querySelectorAll("li p")
+        let b =document.getElementsByTagName("li")
+        console.log(a)
+        let index = true;
+        a[0].onclick =function(){
+        if(index){
+                b[0].className = "show"
+            } 
+         else{
+                b[0].className = ""
+            }
+            index = !index;
+        }
+        a[3].onclick =function(){
+        if(index){
+                b[1].className = "show"
+            } 
+         else{
+                b[1].className = ""
+            }
+            index = !index;
+        }
+        a[6].onclick =function(){
+        if(index){
+                b[2].className = "show"
+            } 
+         else{
+                b[2].className = ""
+            }
+            index = !index;
+        }*/
+        let aTit = document.getElementsByClassName("tit")
+        let aLi = document.getElementsByTagName("li")
+        let len = aLi.length
+        let index =true;
+        console.log(aLi)
+            for(let i =0;i<len;i++){
+                aTit[i].onclick = function() {
+                    if(index){
+                        for(let j =0;j<len;j++){
+                            aLi[j].className =""
+                        }
+                        aLi[i].className ="show"
+                    }
+                    else{
+                        aLi[i].className =""
+                    }
+                    index =!index;
+                }
+            }
+    </script>
+</body>
+</html>

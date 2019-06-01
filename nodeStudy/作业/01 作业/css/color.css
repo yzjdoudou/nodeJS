@@ -1,0 +1,28 @@
+@charset "utf-8";
+*{padding:0;margin: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+img{border:0;}
+.corlor{
+    float:left;
+    margin-left:60px;
+    width: 60px;
+    height: 60px;
+    margin-top:60px;
+}
+li{
+    width: 60px;
+    height:20px;
+    text-align: center;
+    line-height: 20xp;
+    color: black;
+}
+li:nth-of-type(1){
+    background-color: red;
+}
+li:nth-of-type(2){
+    background-color: green;
+}
+li:nth-of-type(3){
+    background-color: yellow;
+}

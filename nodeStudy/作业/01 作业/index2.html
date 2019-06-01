@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <style>
+        img{
+            border:0;
+            vertical-align: middle;
+        }
+        ul,ol{
+            list-style:none;
+        }
+        a{
+            color:#ccc;
+            text-decoration:none;
+        }
+        body,ul,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6{
+            margin:0;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box"></div>
+        <div class="test-box">黄色</div>
+        <div class="test-box">蓝色</div>
+        <div class="test-box">红色</div>
+    </div>
+    <script>
+        var abox = document.getElementsByClassName("box");
+        var atest = document.getElementsByClassName("test-box");
+        atest[0].onclick =function(){
+            abox[0].style.backgroundColor = "yellow"
+        };
+        atest[1].onclick =function(){
+            abox[0].style.backgroundColor = "blue"
+        };
+        atest[2].onclick =function(){
+            abox[0].style.backgroundColor = "red"
+        };
+        abox[0].onclick =function(){
+            abox[0].style.backgroundColor = "black"
+        };
+
+
+    </script>
+</body>
+</html>

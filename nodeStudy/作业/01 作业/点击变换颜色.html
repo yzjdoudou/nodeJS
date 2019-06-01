@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <style>
+        #wrap{
+            float:left;
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+            border:3px solid black;
+            line-height: 200px;
+            text-align: center;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap"></div>
+    <ul class="corlor">
+        <li>中国红</li>
+        <li>原谅绿</li>
+        <li>苹果黄</li>
+    </ul>
+    <script>
+        let wrap = document.getElementById("wrap")
+        let a = document.getElementsByTagName("li")
+        wrap.onclick = function (){
+            wrap.style.backgroundColor ="#111" 
+            wrap.innerHTML = "别碰我傻逼"
+        }
+        a[0].onclick = function (){
+            wrap.style.backgroundColor ="red" 
+            wrap.innerHTML = "中国红"
+        }
+        a[1].onclick = function (){
+            wrap.style.backgroundColor ="green" 
+            wrap.innerHTML = "原谅绿"
+        }
+        a[2].onclick = function (){
+            wrap.style.backgroundColor ="yellow" 
+            wrap.innerHTML = "苹果黄"
+        }
+    </script>
+</body>
+</html>

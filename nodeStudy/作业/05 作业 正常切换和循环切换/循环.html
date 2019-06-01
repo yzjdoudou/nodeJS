@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        #wrap{
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+     <div class="pic">
+         <p>1/5</p>
+        <img src="images/1.jpg" alt="" class="show">
+         <img src="images/2.jpg" alt="" class="">
+         <img src="images/3.jpg" alt="" class="">
+        <img src="images/4.jpg" alt="" class="">
+         <img src="images/5.jpg" alt="" class="">
+        <span class="con left-btn">&lt;</span>
+        <span class="con right-btn">&gt;</span>
+        <p>植物</p>
+        <button class="sim">正常模式</button>
+        <button class="xunh">循环模式</button>
+    </div>
+
+    <script>
+        let aImg = document.getElementsByTagName("img")
+        let aP = document.getElementsByTagName("p")
+        let aButton = document.getElementsByTagName("button")
+        let bthLeft = document.getElementsByClassName("left-btn")[0]
+        let bthRight = document.getElementsByClassName("right-btn")[0]
+        let index = true
+        let num =0
+        let arr = ["植物","大战","僵尸","快乐","玩"];
+        let oldImg = aImg[num]
+        aButton[0].onclick = function(){
+            aButton[0].classList.add("active")
+            aButton[1].classList.remove("active")
+            index = true;
+        }
+        aButton[1].onclick = function(){
+            aButton[1].classList.add("active")
+            aButton[0].classList.remove("active")
+            index = false;
+        }
+        function run(){
+            aP[0].innerHTML =`${num+1}/5`
+            aP[1].innerHTML =arr[num]
+            oldImg.classList.remove("show")
+            oldImg = aImg[num]
+            aImg[num].classList.add("show")
+        }
+        bthRight.onclick =function(){
+            num++
+            if(num>4){
+                index?num=4:num=0
+            }
+            run()
+        }
+        bthLeft.onclick =function(){
+            num--
+            if(num<0){
+                index?num=0:num=4
+            }
+            run()
+        }
+    </script>
+</body>
+</html>

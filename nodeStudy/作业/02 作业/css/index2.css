@@ -1,0 +1,34 @@
+@charset "utf-8";
+#wrap{
+    margin:100px auto;
+    width:400px;
+    height:800px;
+
+}
+.enArea{
+    width:380px;
+    height:180px;
+    border:10px solid black;
+}
+button{
+    display: block;
+    margin:30px 300px; ;
+    border:2px solid black;
+    width:60px;
+    height:30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul{
+    width:394px;
+    height:300px;
+    overflow: hidden;
+    border:3px solid black;
+}
+ul li{
+    width:394px;
+    height:30px;
+    line-height: 30px;
+    font-size:18px;
+    color:red;
+}

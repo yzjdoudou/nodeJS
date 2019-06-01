@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/xiala.css">
+    <style>
+        #wrap{
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+
+    </div>
+    <ul class="">
+        <li>1点击标题</li>
+        <li>开始</li>
+        <li>结束</li>
+    </ul>
+    <ul class="">
+        <li>2点击标题</li>
+        <li>豆豆</li>
+        <li>小豆</li>
+    </ul>
+    <ul class="">
+        <li>3点击标题</li>
+        <li>死亡</li>
+        <li>存活</li>
+    </ul>
+    <script>
+        let abox = document.getElementsByTagName("ul")
+        let aLi= document.querySelectorAll("ul li")
+        let index = true;
+        console.log(aLi)
+        aLi[0].onclick = function(){
+            if(index){
+                abox[0].className = "box"
+            }
+            else{
+                abox[0].className = ""
+            }
+            index =!index
+        }
+        aLi[3].onclick = function(){
+            if(index){
+                abox[1].className = "box"
+            }
+            else{
+                abox[1].className = ""
+            }
+            index =!index
+        }
+        aLi[6].onclick = function(){
+            if(index){
+                abox[2].className = "box"
+            }
+            else{
+                abox[2].className = ""
+            }
+            index =!index
+        }
+
+    </script>
+</body>
+</html>

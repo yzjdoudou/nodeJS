@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <style>
+        img{
+            border:0;
+            vertical-align: middle;
+        }
+        ul,ol{
+            list-style:none;
+        }
+        a{
+            color:#ccc;
+            text-decoration:none;
+        }
+        body,ul,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6{
+            margin:0;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="enArea">
+            <textarea></textarea>
+        </div>
+        <button>输入</button>
+        <div class="shou">
+            <ul class="len"></ul>
+        </div>
+    </div>
+    <script>
+        let aenArea = document.getElementsByTagName("textarea");
+        let abutton = document.getElementsByTagName("button");
+        let aul =document.getElementsByClassName("len");
+        let a;
+        abutton[0].onclick = function(){
+            a = aenArea[0].value;
+            aul[0].innerHTML +=`<li>${a}</li>`;
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

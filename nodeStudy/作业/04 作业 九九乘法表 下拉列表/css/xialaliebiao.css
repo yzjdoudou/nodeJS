@@ -1,0 +1,28 @@
+@charset "utf-8";
+*{padding: 0;margin: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+img{border: 0;}
+.box{
+    margin: 100px;
+}
+li{
+    overflow: hidden;
+    width: 100px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    transition: 1s;
+}
+li p:nth-of-type(1){
+    background-color:greenyellow;
+}
+p{
+    width: 100px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+}
+.show{
+    height: 60px;
+}

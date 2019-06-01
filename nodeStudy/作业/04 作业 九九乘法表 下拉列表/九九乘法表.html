@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        #wrap{
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    </div>
+    <ul class="nine">
+
+    </ul>
+    <div class="second"></div>
+    <script>
+        let nine = document.getElementsByClassName("nine")
+            for(let i = 1;i <=9;i++){
+                for(let j = 1;j <=i;j++){
+                    nine[0].innerHTML = nine[0].innerHTML + `<span>${i}*${j}=${i*j}</span>`
+                }
+                nine[0].innerHTML +=  `<br>`
+            }
+        let  second = document.getElementsByClassName("second")
+            for(let i = 1;i <=9;i++){
+                for(let j = i;j <=9;j++){
+                    second[0].innerHTML += `<span>${i}*${j}=${i*j}</span>`
+                }
+                second[0].innerHTML +=  `<br>`
+            }
+    </script>
+</body>
+</html>

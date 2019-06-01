@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/tex.css">
+    <style>
+        #wrap{
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="mbox">
+        <textarea id="box"></textarea>
+        <button class="point">发送</button>
+        <ul></ul>
+    </div>
+    <script>
+        let a = document.getElementById("box")
+        let b = document.getElementsByClassName("point")[0]
+        let c = document.getElementsByTagName("ul")[0];
+        let str;
+        console.log(a,b,c)
+        b.onclick = function(){
+            str = a.value;
+            c.innerHTML+="<li>${sr}</li>";
+        }
+    </script>
+</body>
+</html>

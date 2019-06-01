@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/tex.css">
+    <style>
+        #wrap{
+            margin:20px;
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="chengfa"></div>
+    <script>
+        let chengfa = document.getElementsByClassName("chengfa")[0]
+        let str ="";
+        for(let i = 1;i <= 9;i++){
+            for(let j = 1;j<=i;j++){
+                str +=`<span>${i}*${j}=${i*j}</span>`
+            }
+            str +=`<br>`
+            chengfa.innerHTML =str; 
+        }
+        for(let k = 1;k <= 9;k++){
+            for(let f = k;f<=9;f++){
+                str +=`<span>${k}*${f}=${k*f}</span>`
+            }
+            str +=`<br>`
+            chengfa.innerHTML =str; 
+        }
+    </script>
+</body>
+</html>
